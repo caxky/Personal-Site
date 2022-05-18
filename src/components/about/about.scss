@@ -1,7 +1,17 @@
 @import '../../assets/index.scss';
 
-.about {
-  background-color: azure;
+.about {  
+  h3 {
+    color: $bone-white;
+  }
+
+  p {
+    color: $dark-slate;
+
+    span {
+      color: $aquamarine;
+    }
+  }
 }
 
 .intro {
