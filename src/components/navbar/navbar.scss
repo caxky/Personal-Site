@@ -1,0 +1,9 @@
+@import '../../assets/index.scss';
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: $darker-blue;
+  position: fixed;
+  top: 0;
+}

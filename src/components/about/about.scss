@@ -1,0 +1,21 @@
+@import '../../assets/index.scss';
+
+.about {
+  background-color: azure;
+}
+
+.intro {
+  width: 100%;
+
+  h1 {
+    color: $bone-white;
+  }
+
+  h2 {
+    color: $slate;
+  }
+
+  h6 {
+    color: $aquamarine;
+  }
+}
