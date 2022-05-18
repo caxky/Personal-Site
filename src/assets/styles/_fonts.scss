@@ -2,9 +2,15 @@
 
 $inter: 'Inter', sans-serif;
 
-h1, h2, h3, h4, h5 {
+h1, h2, h4, h5 {
   font-family: $inter;
   font-weight: medium;
+}
+
+h3 {
+  font-family: $inter;
+  font-weight: medium;
+  color: $bone-white;
 }
 
 h6, p {
