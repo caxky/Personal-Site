@@ -1,8 +1,17 @@
 @import '../../assets/index.scss';
 
-.about {  
+#about {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.about {
+  padding: 15px;
+
   p {
     color: $dark-slate;
+    white-space: normal;
 
     span {
       color: $aquamarine;
@@ -12,16 +21,29 @@
 
 .intro {
   width: 100%;
+  flex: 0.5;
 
-  h1 {
-    color: $bone-white;
-  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  h2 {
-    color: $slate;
-  }
-
-  h6 {
-    color: $aquamarine;
+    h1 {
+      color: $bone-white;
+      margin: 0px;
+    }
+  
+    h2 {
+      color: $slate;
+      margin: 0px;
+    }
+  
+    h6 {
+      color: $aquamarine;
+      margin-bottom: 15px;
+    }
   }
 }
