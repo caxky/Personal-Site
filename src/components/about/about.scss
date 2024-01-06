@@ -25,6 +25,35 @@
     flex-wrap: wrap;
     margin-top: 20px;
 
+    .row-below {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+  
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2px;
+        padding: 0 2px;
+        width: calc(15% - 8px);
+        height: 50px;
+
+        h5 {
+          color: $slate;
+          font-weight: lighter;
+          font-size: 14px;
+          margin-right: 8px;
+        }
+
+        img {
+          padding: 2px;
+          width: 27px;
+        }
+      }
+    }
+
     .item {
       display: flex;
       align-items: center;

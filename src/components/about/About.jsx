@@ -1,6 +1,96 @@
 import "./about.scss";
 
 export default function About() {
+  const formatInterests = (interests) => {
+    return interests.map((interest, index) => {
+      if (index === interests.length - 1) {
+        return <> and<span key={index}> {interest}</span></>;
+      } else if (index === interests.length - 2) {
+        return <span key={index}>{interest}</span>;
+      } else {
+        return <><span key={index}>{interest}</span>, </>;
+      }
+    });
+  };
+
+  const interests = [
+    'financial technologies',
+    'blockchain and web3',
+    'data analysis',
+    'application development'
+  ];
+  
+  const otherInterests = [
+    'artificial intelligence',
+    'image processing'
+  ];
+
+  const technologies = [
+    {
+      name: 'Javascript',
+      logo: 'https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png',
+    },
+    {
+      name: 'Vue.js',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png',
+    },
+    {
+      name: 'React',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png',
+    },
+    {
+      name: 'Python',
+      logo: 'https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png',
+    },
+    {
+      name: 'MongoDB',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png',
+    },
+    {
+      name: 'Node.js',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png',
+    },
+    {
+      name: 'PostgreSQL',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/postgresql-226047.png',
+    },
+    {
+      name: 'Java',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/java-43-569305.png',
+    },
+    {
+      name: 'C++',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/c-4-226082.png',
+    },
+    {
+      name: 'Golang',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/golang-3629468-3030130.png',
+    },
+    {
+      name: 'SASS',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/sass-226054.png',
+    },
+    {
+      name: 'Rust',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/rust-226088.png',
+    },
+    {
+      name: 'Docker',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/docker-226091.png',
+    },
+    {
+      name: 'Kubernetes',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/kubernetes-282507.png',
+    },
+    {
+      name: 'PHP',
+      logo: 'https://cdn.iconscout.com/icon/free/png-256/php-2038871-1720084.png',
+    }
+  ];
+
+  const formattedInterests = formatInterests(interests);
+  const formattedOtherInterests = formatInterests(otherInterests);
+
   return (
     <div id="about">
       <div className="intro">
@@ -14,38 +104,31 @@ export default function About() {
       <div className="about">
         <h3>{'<About/>'}</h3>
 
-        <p>I’m a third year student at the University of Ottawa studying Computer Science.</p>
+        <p>I’m a recent graduate from the University of Ottawa with an Honours BSc in Computer Science.</p>
         <p>
-          My current interests are <span>financial technologies</span>, <span>blockchain and web3</span>, <span>data analysis</span>, and <span>application development</span>. 
-          I continue to explore other areas of computer science/software engineering such as <span>artificial intelligence</span>, <span>image processing</span>, etc.
+          My current interests are {formattedInterests}. I continue to explore other areas of computer science/software 
+          engineering such as {formattedOtherInterests}.
         </p>
         <br/>
-        <p>A few technologies I’ve been working with recently:</p>
+        <p>A few technologies I’ve been working with recently or have worked with in the past:</p>
 
         <div className="container">
-          <div className="item">
-            <h4>Javascript</h4>
-            <img src="https://raw.githubusercontent.com/voodootikigod/logo.js/master/js.png" alt="" />
-          </div>
-
-          <div className="item">
-            <h4>Vue.js</h4>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="" />
-          </div>
-
-          <div className="item">
-            <h4>React</h4>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="" />
-          </div>
-
-          <div className="item">
-            <h4>Python</h4>
-            <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt="" />
-          </div>
-
-          <div className="item">
-            <h4>MongoDB</h4>
-            <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-4-1175139.png" alt="" />
+          {technologies.slice(0, 5).map((technology, index) => (
+            <div className="item" key={index}>
+              <h4>{technology.name}</h4>
+              <img
+                src={technology.logo}
+                alt=""
+              />
+            </div>
+          ))}
+          <div className="row-below">
+            {technologies.slice(5).map((technology, index) => (
+              <div className="item smaller" key={index}>
+                <h5>{technology.name}</h5>
+                <img src={technology.logo} alt=""/>
+              </div>
+            ))}
           </div>
         </div>
       </div>
