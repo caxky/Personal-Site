@@ -1,3 +1,4 @@
+// projects.scss
 @import '../../assets/index.scss';
 
 #projects {
@@ -9,5 +10,44 @@
 .projects {
   .wrapper {
     padding-top: 10px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+
+    .project-card {
+      background-color: $darker-blue;
+      padding: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+
+      .project-info {
+        h4 {
+          color: $bone-white;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+
+        p {
+          color: $slate;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
   }
 }
