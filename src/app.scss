@@ -7,7 +7,6 @@
     position: relative;
     top: 70px;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     scrollbar-width: none;
     &::-webkit-scrollbar{
@@ -17,7 +16,6 @@
     > *{
       width: 100vw;
       height: calc(100vh - 70px);
-      scroll-snap-align: start;
     }
   }
 }
