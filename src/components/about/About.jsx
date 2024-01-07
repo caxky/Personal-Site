@@ -64,7 +64,7 @@ export default function About() {
     },
     {
       name: 'Golang',
-      logo: 'https://cdn.iconscout.com/icon/free/png-256/golang-3629468-3030130.png',
+      logo: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/golang_logo_icon_171073.png',
     },
     {
       name: 'SASS',
@@ -72,7 +72,7 @@ export default function About() {
     },
     {
       name: 'Rust',
-      logo: 'https://cdn.iconscout.com/icon/free/png-256/rust-226088.png',
+      logo: 'https://th.bing.com/th/id/R.6263df62840add6bc6123157bac295f5?rik=kqtt2PAY49wR4A&pid=ImgRaw&r=0',
     },
     {
       name: 'Docker',
@@ -80,7 +80,7 @@ export default function About() {
     },
     {
       name: 'Kubernetes',
-      logo: 'https://cdn.iconscout.com/icon/free/png-256/kubernetes-282507.png',
+      logo: 'https://cdn.iconscout.com/icon/free/png-512/free-kubernets-283489.png',
     },
     {
       name: 'PHP',
