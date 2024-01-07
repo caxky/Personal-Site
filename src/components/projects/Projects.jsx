@@ -6,28 +6,22 @@ import './projects.scss';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'This is the first project',
+    title: 'ReptiBuddy',
+    description: 'A social media platform for reptile enthusiasts, or those who are interested in learning more about reptiles.',
     image: 'project1.jpg',
     link: 'https://example.com/project1'
   },
   {
-    title: 'Project 2',
-    description: 'This is the second project',
+    title: 'Domain-Specific Fake News Detection Using Deep Learning',
+    description: 'A research project that aims to detect fake news using various language models.',
+    image: 'project3.jpg',
+    link: 'https://github.com/caxky/Fake-News-Detection'
+  },
+  {
+    title: 'Quantop',
+    description: 'A suite of financial analysis tools for investors.',
     image: 'project2.jpg',
     link: 'https://example.com/project2'
-  },
-  {
-    title: 'Project 3',
-    description: 'This is the third project',
-    image: 'project3.jpg',
-    link: 'https://example.com/project3'
-  },
-  {
-    title: 'Project 4',
-    description: 'This is the fourth project',
-    image: 'project4.jpg',
-    link: 'https://example.com/project4'
   }
 ];
 
