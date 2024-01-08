@@ -43,7 +43,7 @@ const Projects = () => {
     <ThemeProvider theme={theme}>
       <div className='projects' id='projects'>
         <div className="wrapper">
-          <h3>{'<Projects/>'}</h3>
+          <h2>{'<Projects/>'}</h2>
           <Grid container spacing={2}>
             {projects.map((project, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>

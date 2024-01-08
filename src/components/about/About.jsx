@@ -95,15 +95,15 @@ export default function About() {
     <div id="about">
       <div className="intro">
         <div className="wrapper">
-          <h6>Hi, my name is</h6>
-          <h1>Kyle James.</h1>
-          <h2>Software Engineering, Entrepreneurship, Finance</h2>
+          <h5>Hi, my name is</h5>
+          <h1>Kyle James</h1>
+          <h3>Software Engineer, Entrepreneur, Finance</h3>
         </div>
       </div>
 
+      <h2>{'<About/>'}</h2>
+      
       <div className="about">
-        <h3>{'<About/>'}</h3>
-
         <p>I’m a recent graduate from the University of Ottawa with an Honours BSc in Computer Science.</p>
         <p>
           My current interests are {formattedInterests}. I continue to explore other areas of computer science/software 
