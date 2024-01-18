@@ -1,6 +1,10 @@
+import React from 'react';
+import { useMediaQuery } from '@mui/material';
 import "./about.scss";
 
 export default function About() {
+  const isMobile = useMediaQuery('(max-width:600px)');
+
   const formatInterests = (interests) => {
     return interests.map((interest, index) => {
       if (index === interests.length - 1) {
@@ -112,25 +116,48 @@ export default function About() {
         <br/>
         <p>A few technologies I’ve been working with recently or have worked with in the past:</p>
 
-        <div className="container">
-          {technologies.slice(0, 5).map((technology, index) => (
-            <div className="item" key={index}>
-              <h4>{technology.name}</h4>
-              <img
-                src={technology.logo}
-                alt=""
-              />
-            </div>
-          ))}
-          <div className="row-below">
-            {technologies.slice(5).map((technology, index) => (
-              <div className="item smaller" key={index}>
-                <h5>{technology.name}</h5>
-                <img src={technology.logo} alt=""/>
+        { isMobile ? (
+            <div className="container">
+              {technologies.slice(0, 5).map((technology, index) => (
+                <div className="item-mobile" key={index}>
+                  <h4>{technology.name}</h4>
+                  <img
+                    src={technology.logo}
+                    alt=""
+                  />
+                </div>
+              ))}
+
+              <div className="row-below">
+                {technologies.slice(5).map((technology, index) => (
+                  <div className="item-mobile" key={index}>
+                    <h5>{technology.name}</h5>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
+          ) : (
+            <div className="container">
+              {technologies.slice(0, 5).map((technology, index) => (
+                <div className="item" key={index}>
+                  <h4>{technology.name}</h4>
+                  <img
+                    src={technology.logo}
+                    alt=""
+                  />
+                </div>
+              ))}
+
+              <div className="row-below">
+                {technologies.slice(5).map((technology, index) => (
+                  <div className="item smaller" key={index}>
+                    <h5>{technology.name}</h5>
+                    <img src={technology.logo} alt=""/>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
       </div>
     </div>
   )
