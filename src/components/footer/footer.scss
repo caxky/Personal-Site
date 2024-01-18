@@ -1,0 +1,16 @@
+@import '../../assets/index.scss';
+
+.footer {
+  bottom: 0;
+  background-color: $darker-blue;
+  height: 25px;
+  text-align: center;
+  font-size: 14px;
+
+  h5 {
+    margin: 15px 0 0 0;
+    color: $bone-white;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+}

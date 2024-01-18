@@ -1,10 +1,7 @@
 .app {
-  height: 100vh;
-
   .sections {
     width: 100%;
     position: relative;
-    top: 70px;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
