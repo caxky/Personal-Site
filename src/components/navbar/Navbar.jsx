@@ -33,6 +33,13 @@ export default function Navbar() {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='navbar'>
       <ThemeProvider theme={theme}>
@@ -54,24 +61,31 @@ export default function Navbar() {
                 <Typography variant="h6" style={{ flexGrow: 1 }}>
                   Kyle
                 </Typography>
-                <Button color="inherit">{'<About/>'}</Button>
-                <Button color="inherit">{'<Projects/>'}</Button>
-                <Button color="inherit">{'<Contact/>'}</Button>
+                <Button color="inherit" onClick={() => scrollToSection('about')}>{'<About/>'}</Button>
+                <Button color="inherit" onClick={() => scrollToSection('projects')}>{'<Projects/>'}</Button>
+                <Button color="inherit" onClick={() => scrollToSection('contact')}>{'<Contact/>'}</Button>
               </>
             )}
           </Toolbar>
         </AppBar>
       
-        <Drawer anchor="right" open={isDrawerOpen} onClose={toggleDrawer}>
+        <Drawer anchor="right" open={isDrawerOpen} onClose={toggleDrawer}
+          PaperProps={{
+            style: {
+              backgroundColor: '#0A192F',
+              color: '#A8B2D1',
+            },
+          }}
+        >
           <List>
-            <ListItem>
-              <ListItemText primary={'<About/>'} />
+            <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('about')}>
+              <ListItemText primary={'<ABOUT/>'} />
             </ListItem>
-            <ListItem>
-              <ListItemText primary={'<Projects/>'} />
+            <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('projects')}>
+              <ListItemText primary={'<PROJECTS/>'} />
             </ListItem>
-            <ListItem>
-              <ListItemText primary={'<Contact/>'} />
+            <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('contact')}>
+              <ListItemText primary={'<CONTACT/>'} />
             </ListItem>
           </List>
         </Drawer>
