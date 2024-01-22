@@ -26,6 +26,7 @@ const projects = [
 ];
 
 const CustomCard = styled(Card)({
+  height: '100%',
   backgroundColor: theme.palette.secondary.main,
   color: theme.palette.text.primary,
   '&:hover': {
@@ -50,7 +51,7 @@ const Projects = () => {
                 <CustomCard className="project-card" onClick={() => openProjectLink(project.link)}>
                   <CardMedia
                     component="img"
-                    height="200"
+                    height="260"
                     image={project.image}
                     alt={project.title}
                   />
