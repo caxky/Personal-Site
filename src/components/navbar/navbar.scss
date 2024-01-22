@@ -19,6 +19,16 @@
     }
   }
 
+  .logo-container {
+    height: 35px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+
+  .logo-container:hover img {
+    cursor: pointer;
+  }
+
   .wrapper {
     height: 100%;
     display: flex;

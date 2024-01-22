@@ -18,14 +18,14 @@ export default function About() {
   };
 
   const interests = [
+    'artificial intelligence',
     'financial technologies',
-    'blockchain and web3',
     'data analysis',
     'application development'
   ];
   
   const otherInterests = [
-    'artificial intelligence',
+    'blockchain and web3',
     'image processing'
   ];
 
@@ -101,7 +101,7 @@ export default function About() {
         <div className="wrapper">
           <h5>Hi, my name is</h5>
           <h1>Kyle James</h1>
-          <h3>Software Engineer, Entrepreneur, Finance</h3>
+          <h3>Software Developer, Finance Nerd</h3>
         </div>
       </div>
 

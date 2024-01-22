@@ -40,6 +40,10 @@ export default function Navbar() {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
     <div className='navbar'>
       <ThemeProvider theme={theme}>
@@ -47,9 +51,11 @@ export default function Navbar() {
           <Toolbar>
             {isMobile ? (
               <>
-                <Typography variant="h6" style={{ flexGrow: 1 }}>
-                  Kyle
-                </Typography>
+                <div variant="h6" style={{ flexGrow: 1 }}>
+                  <div className="logo-container" onClick={scrollToTop}>
+                    <img src="images/kj.png" alt="Logo" style={{ height: '90%' }}/>
+                  </div>
+                </div>
                 <div className='icon-container'>
                   <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer}>
                     <MenuIcon />
@@ -58,9 +64,11 @@ export default function Navbar() {
               </>
             ) : (
               <>
-                <Typography variant="h6" style={{ flexGrow: 1 }}>
-                  Kyle
-                </Typography>
+                <div variant="h6" style={{ flexGrow: 1 }}>
+                  <div className="logo-container" onClick={scrollToTop}>
+                    <img src="images/kj.png" alt="Logo" style={{ height: '100%' }}/>
+                  </div>
+                </div>
                 <Button color="inherit" onClick={() => scrollToSection('about')}>{'<About/>'}</Button>
                 <Button color="inherit" onClick={() => scrollToSection('projects')}>{'<Projects/>'}</Button>
                 <Button color="inherit" onClick={() => scrollToSection('contact')}>{'<Contact/>'}</Button>
