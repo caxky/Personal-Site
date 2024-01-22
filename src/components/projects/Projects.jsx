@@ -8,19 +8,19 @@ const projects = [
   {
     title: 'ReptiBuddy',
     description: 'A social media platform for reptile enthusiasts, or those who are interested in learning more about reptiles.',
-    image: 'project1.jpg',
+    image: 'images/reptibuddy.jpg',
     link: 'https://example.com/project1'
   },
   {
     title: 'Domain-Specific Fake News Detection Using Deep Learning',
-    description: 'A research project that aims to detect fake news using various language models.',
-    image: 'project3.jpg',
+    description: 'A research project that aims to detect fake news using various large language models.',
+    image: 'images/fakenewsdetection.jpg',
     link: 'https://github.com/caxky/Fake-News-Detection'
   },
   {
     title: 'Quantop',
     description: 'A suite of financial analysis tools for investors.',
-    image: 'project2.jpg',
+    image: 'images/quantop.png',
     link: 'https://example.com/project2'
   }
 ];
