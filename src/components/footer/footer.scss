@@ -1,10 +1,13 @@
 @import '../../assets/index.scss';
 
 .footer {
+  margin-top: 80px;
   bottom: 0;
   background-color: $darker-blue;
-  height: 25px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
+  align-items: center;
   font-size: 14px;
 
   h5 {
