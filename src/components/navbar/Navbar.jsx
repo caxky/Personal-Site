@@ -28,6 +28,9 @@ const theme = createTheme({
 export default function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width:600px)');
+  const buttonStyle = {
+    color: theme.palette.text.primary,
+  };
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -79,13 +82,19 @@ export default function Navbar() {
         >
           <List>
             <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('about')}>
-              <ListItemText primary={'<ABOUT/>'} />
+              <ListItemText className='drawerButton'>
+                <Button variant="h6">{'<About/>'}</Button>
+              </ListItemText>
             </ListItem>
             <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('projects')}>
-              <ListItemText primary={'<PROJECTS/>'} />
+              <ListItemText className='drawerButton'>
+                <Button variant="h6">{'<Projects/>'}</Button>
+              </ListItemText>
             </ListItem>
             <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('contact')}>
-              <ListItemText primary={'<CONTACT/>'} />
+              <ListItemText className='drawerButton'>
+                <Button variant="h6">{'<Contact/>'}</Button>
+              </ListItemText>
             </ListItem>
           </List>
         </Drawer>
