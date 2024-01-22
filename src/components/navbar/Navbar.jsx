@@ -28,9 +28,6 @@ const theme = createTheme({
 export default function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const isMobile = useMediaQuery('(max-width:600px)');
-  const buttonStyle = {
-    color: theme.palette.text.primary,
-  };
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
