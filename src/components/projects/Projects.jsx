@@ -9,7 +9,7 @@ const projects = [
     title: 'ReptiBuddy',
     description: 'A social media platform for reptile enthusiasts, or those who are interested in learning more about reptiles.',
     image: 'images/reptibuddy.jpg',
-    link: 'https://example.com/project1'
+    link: 'https://reptibuddy.com'
   },
   {
     title: 'Domain-Specific Fake News Detection Using Deep Learning',
@@ -21,7 +21,7 @@ const projects = [
     title: 'Quantop',
     description: 'A suite of financial analysis tools for investors.',
     image: 'images/quantop.png',
-    link: 'https://example.com/project2'
+    link: 'https://quantop.xyz'
   }
 ];
 
