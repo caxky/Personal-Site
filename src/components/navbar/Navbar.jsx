@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, IconButton, Button, Drawer, List, ListItem, ListItemText, useMediaQuery } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Button, Drawer, List, ListItem, ListItemText, Typography, useMediaQuery } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import './navbar.scss';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -47,8 +47,8 @@ export default function Navbar() {
   return (
     <div className='navbar'>
       <ThemeProvider theme={theme}>
-        <AppBar position="static" color="secondary">
-          <Toolbar>
+        <AppBar position="static" color="secondary" >
+          <Toolbar className='navbar-container'>
             {isMobile ? (
               <>
                 <div variant="h6" style={{ flexGrow: 1 }}>
@@ -69,9 +69,15 @@ export default function Navbar() {
                     <img src="images/kj.png" alt="Logo" style={{ height: '100%' }}/>
                   </div>
                 </div>
-                <Button color="inherit" onClick={() => scrollToSection('about')}>{'<About/>'}</Button>
-                <Button color="inherit" onClick={() => scrollToSection('projects')}>{'<Projects/>'}</Button>
-                <Button color="inherit" onClick={() => scrollToSection('contact')}>{'<Contact/>'}</Button>
+                <Button color="inherit" onClick={() => scrollToSection('about')}>
+                  <Typography variant="button">{'<About/>'}</Typography>
+                </Button>
+                <Button color="inherit" onClick={() => scrollToSection('projects')}>
+                  <Typography variant="button">{'<Projects/>'}</Typography>
+                </Button>
+                <Button color="inherit" onClick={() => scrollToSection('contact')}>
+                  <Typography variant="button">{'<Contact/>'}</Typography>
+                </Button>
               </>
             )}
           </Toolbar>
