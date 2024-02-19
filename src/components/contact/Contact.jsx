@@ -7,7 +7,7 @@ import './contact.scss';
 
 const ContactCard = ({title, body, link, image}) => {
   return (
-    <Grid xs={12} sm={6} md={4} style={{ cursor: 'pointer' }}>
+    <Grid item xs={12} sm={6} md={4} style={{ cursor: 'pointer' }}>
       <a href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
         <CustomCard>
           <CardContent style={{ display: 'flex', alignItems: 'center' }}>
