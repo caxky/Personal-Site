@@ -7,20 +7,17 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#112240', // $dark-blue
+      main: '$dark-blue',
     },
     secondary: {
-      main: '#0A192F', // $darker-blue
+      main: '$darker-blue',
     },
     background: {
-      default: '#E5E5E5', // $bone-white
+      default: '$bone-white',
     },
     text: {
-      primary: '#A8B2D1', // $slate
-      secondary: '#8892B0', // $dark-slate
-    },
-    aquamarine: {
-      main: '#64FFDA', // $aquamarine
+      primary: '$slate',
+      secondary: '$dark-slate',
     },
   },
 });
