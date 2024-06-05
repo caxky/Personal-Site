@@ -15,7 +15,7 @@ const projects = [
     title: 'Domain-Specific Fake News Detection Using Deep Learning',
     description: 'A research project that aims to detect fake news using various large language models.',
     image: 'images/fakenewsdetection.jpg',
-    link: 'https://github.com/caxky/Fake-News-Detection'
+    link: 'https://github.com/caxky/FakeNewsDetection'
   },
   {
     title: 'Quantop',
