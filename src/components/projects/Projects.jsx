@@ -12,6 +12,18 @@ const projects = [
     link: 'https://reptibuddy.com'
   },
   {
+    title: 'SpotSeekr',
+    description: 'Inspired by GeoGuessr, SpotSeekr is a game that requires you to get to the target spot using only cardinal directions and distances.',
+    image: 'images/spotseekr.png',
+    link: 'https://spotseekr.com'
+  },
+  {
+    title: 'SimpleTableTop',
+    description: 'A web application that allows users to create and play tabletop games with friends.',
+    image: 'images/stt.png',
+    link: 'https://simpletabletop.xyz'
+  },
+  {
     title: 'Domain-Specific Fake News Detection Using Deep Learning',
     description: 'A research project that aims to detect fake news using various large language models.',
     image: 'images/fakenewsdetection.jpg',
