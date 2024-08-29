@@ -47,13 +47,13 @@ export default function Navbar() {
                 </div>
               </div>
               <Button color="inherit" onClick={() => scrollToSection('about')}>
-                <Typography variant="button">{'<About/>'}</Typography>
+                <Typography variant="button">{'About'}</Typography>
               </Button>
               <Button color="inherit" onClick={() => scrollToSection('projects')}>
-                <Typography variant="button">{'<Projects/>'}</Typography>
+                <Typography variant="button">{'Projects'}</Typography>
               </Button>
               <Button color="inherit" onClick={() => scrollToSection('contact')}>
-                <Typography variant="button">{'<Contact/>'}</Typography>
+                <Typography variant="button">{'Contact'}</Typography>
               </Button>
             </>
           )}
