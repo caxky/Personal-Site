@@ -32,7 +32,7 @@ const Contact = () => {
     <ThemeProvider theme={theme}>
       <div className='contact' id='contact'>
         <div className="wrapper">
-          <h2>{'<Contact/>'}</h2>
+          <h2>{'Contact'}</h2>
           <Grid container spacing={2}>
             <ContactCard title="Email" body="mail@kylejames.me" link="mailto:mail@kylejames.me" image="https://cdn.iconscout.com/icon/free/png-512/free-email-2091034-1767507.png" />
             <ContactCard title="GitHub" body="caxky" link="https://github.com/caxky" image="https://cdn.iconscout.com/icon/free/png-512/free-github-1521500-1288242.png" />

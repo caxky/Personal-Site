@@ -105,7 +105,7 @@ export default function About() {
         </div>
       </div>
 
-      <h2>{'<About/>'}</h2>
+      <h2>{'About'}</h2>
       
       <div className="about">
         <p>I’m a recent graduate from the University of Ottawa with an Honours BSc in Computer Science.</p>

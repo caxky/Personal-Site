@@ -47,13 +47,13 @@ export default function Navbar() {
                 </div>
               </div>
               <Button color="inherit" onClick={() => scrollToSection('about')}>
-                <Typography variant="button">{'<About/>'}</Typography>
+                <Typography variant="button">{'About'}</Typography>
               </Button>
               <Button color="inherit" onClick={() => scrollToSection('projects')}>
-                <Typography variant="button">{'<Projects/>'}</Typography>
+                <Typography variant="button">{'Projects'}</Typography>
               </Button>
               <Button color="inherit" onClick={() => scrollToSection('contact')}>
-                <Typography variant="button">{'<Contact/>'}</Typography>
+                <Typography variant="button">{'Contact'}</Typography>
               </Button>
             </>
           )}
@@ -71,17 +71,17 @@ export default function Navbar() {
         <List>
           <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('about')}>
             <ListItemText className='drawerButton'>
-              <Button variant="h6">{'<About/>'}</Button>
+              <Button variant="h6">{'About'}</Button>
             </ListItemText>
           </ListItem>
           <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('projects')}>
             <ListItemText className='drawerButton'>
-              <Button variant="h6">{'<Projects/>'}</Button>
+              <Button variant="h6">{'Projects'}</Button>
             </ListItemText>
           </ListItem>
           <ListItem style={{ cursor: 'pointer' }} onClick={() => scrollToSection('contact')}>
             <ListItemText className='drawerButton'>
-              <Button variant="h6">{'<Contact/>'}</Button>
+              <Button variant="h6">{'Contact'}</Button>
             </ListItemText>
           </ListItem>
         </List>
