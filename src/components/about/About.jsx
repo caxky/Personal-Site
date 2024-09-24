@@ -101,7 +101,7 @@ export default function About() {
         <div className="wrapper">
           <h5>Hi, my name is</h5>
           <h1>Kyle James</h1>
-          <h3>Software Developer, Finance Nerd</h3>
+          <h3>Software Developer, Finance, Solopreneur</h3>
         </div>
       </div>
 
