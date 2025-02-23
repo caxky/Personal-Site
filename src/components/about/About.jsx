@@ -101,20 +101,20 @@ export default function About() {
         <div className="wrapper">
           <h5>Hi, my name is</h5>
           <h1>Kyle James</h1>
-          <h3>Software Developer, Finance, Solopreneur</h3>
+          <h3>Software Developer, Creator of Things</h3>
         </div>
       </div>
 
       <h2>{'About'}</h2>
       
       <div className="about">
-        <p>I’m a recent graduate from the University of Ottawa with an Honours BSc in Computer Science.</p>
+        <p>I’m a graduate from the University of Ottawa with an Honours BSc in Computer Science.</p>
         <p>
-          My current interests are {formattedInterests}. I continue to explore other areas of computer science/software 
-          engineering such as {formattedOtherInterests}.
+          My current interests are {formattedInterests}. I continue to explore other areas of software 
+          such as {formattedOtherInterests}.
         </p>
         <br/>
-        <p>A few technologies I’ve been working with recently or have worked with in the past:</p>
+        <p>A few frameworks, languages, and technologies I’ve been working with recently or have worked with in the past:</p>
 
         { isMobile ? (
             <div className="container">
