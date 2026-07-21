@@ -3,8 +3,8 @@ import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import './app.scss';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Toolkit from './components/toolkit/Toolkit';
 
 const theme = createTheme({
   palette: {
@@ -35,6 +35,7 @@ function App() {
         <div className="sections">
           <About/>
           <Projects/>
+          <Toolkit/>
           <Contact/>
         </div>
         <Footer/>

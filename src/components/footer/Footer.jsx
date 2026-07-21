@@ -1,9 +1,7 @@
-import './footer.scss';
-
 export default function Footer() {
   return (
-    <div className='footer'>
-      <h5>Made by a human © 2025 Kyle James</h5>
-    </div>
-  )
+    <footer className="mx-auto flex max-w-[1120px] justify-end border-t border-slate/15 px-6 py-5 text-[11px] tracking-[.04em] text-muted sm:px-10">
+      <span>© 2026 Kyle James</span>
+    </footer>
+  );
 }
