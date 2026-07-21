@@ -44,7 +44,7 @@ export default function Projects() {
       <div className="mb-10 flex flex-col gap-6 sm:mb-12 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[.14em] text-mint">
-            Selected work
+            Projects
           </p>
           <h2 className="m-0 text-[clamp(2.3rem,4.6vw,3.6rem)] font-semibold leading-[.98] tracking-[-.06em] text-bone">
             A few things I’ve
@@ -53,8 +53,8 @@ export default function Projects() {
           </h2>
         </div>
         <p className="mb-0 max-w-sm text-sm leading-6 text-muted">
-          Experiments, products, and digital tools made to solve real
-          problems—and make the process a little more enjoyable.
+          Experiments, products, digital tools, or commissioned applications
+          I've worked on.
         </p>
       </div>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-12">
